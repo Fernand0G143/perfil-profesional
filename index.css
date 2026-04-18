@@ -5,7 +5,6 @@ body {
   padding: 0;
   height: 100%;
   width: 100%;
-  overflow-x: auto; /* Permite scroll horizontal en móviles */
 }
 
 body {
@@ -13,6 +12,21 @@ body {
   display: flex;
   flex-wrap: nowrap;
 }
+
+/* Media query para pantallas pequeñas: apilar verticalmente */
+@media (max-width: 930px) {
+  body {
+    flex-direction: column;
+    overflow-x: hidden;
+  }
+
+  .perfil,
+  .detalles {
+    width: 100%;
+    max-width: none;
+  }
+}
+
 
 .fotoperfil {
   width: 300px;
@@ -26,17 +40,15 @@ body {
   font-size: 1.2em;
   background-color: #234e78;
   min-height: 100vh;
-  min-width: 0px;
   width: 100%;
-  max-width: 430px;
-
-  max-width: 430px;
-  flex-shrink: 0; /* Impide que la columna se haga más angosta */
+  max-width: 500px;
+  flex-shrink: 1; /* Permite que la columna se reduzca */
   display: flex;
   flex-direction: column;
   align-items: center;
   margin:0;
 }
+
 
 .nombre {
   color: white;
@@ -144,7 +156,6 @@ body {
   text-align: center;
   font-size: 1.2em;
   min-height: 100vh;
-  min-width: 0px;
   width: 100%;
   max-width: 430px;
   display: flex;
@@ -152,8 +163,9 @@ body {
   align-items: center;
   margin: 0;
   background-color: rgb(189, 197, 197);
-  flex-shrink: 0; /* Impide que la columna se haga más angosta */
+  flex-shrink: 1; /* Permite que la columna se reduzca */
 }
+
 
 .subtitle{
   font-size: 1.6em;
