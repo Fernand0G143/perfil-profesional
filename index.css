@@ -1,5 +1,7 @@
 body {
+  margin: 0; /* Elimina el margen por defecto del navegador */
   display: flex;
+  height: 100vh;
 }
 
 .fotoperfil {
@@ -12,15 +14,15 @@ body {
 .perfil {
   text-align: center;
   font-size: 1.2em;
-
+  height: 100vh;
   background-color: #234e78;
-  height: 920px;
+  min-height: 100vh;
   width: 500px;
+  flex-shrink: 0; /* Impide que la columna se haga más angosta */
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: -8px;
-  margin-left: -8px;
+  margin:0;
 }
 
 .nombre {
@@ -58,7 +60,7 @@ body {
 .descripcion {
   display: flex;
   margin-top: 20px;
-  margin-bottom: 0px;
+  margin-bottom: -5px;
   width: 400px;
   text-align: justify;
   font-size: 0.9em;
@@ -78,7 +80,9 @@ body {
 }
 .contacto {
   display: flex;
-  margin-bottom: 0px;
+  margin-bottom: 10px;
+  margin-top: 40px;
+  margin-left: 25px;
 }
 .contacto_item {
   display: flex;
@@ -125,28 +129,36 @@ body {
 .detalles {
   text-align: center;
   font-size: 1.2em;
-  background-color: #234e78;
-  height: 920px;
-  width: 400px;
+  height: 100vh;
+  width: 430px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: -8px;
-  margin-left: -8px;
+  margin: 0;
   background-color: rgb(189, 197, 197);
+  flex-shrink: 0; /* Impide que la columna se haga más angosta */
 }
 
 .subtitle{
-  font-size: larger;
+  font-size: 1.6em;
   color: #234e78;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin-top: 20px;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
   font-weight:bold;
 }
-.texto{
-  font-size: 0.9em;
+.formacion{
+  font-size: 1.2em;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin-top: 0px;
   margin-bottom: 0px;
+  font-weight: bold;
+}
+
+.instituto{
+  font-size: 1.1em;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin-top: 10px;
+  margin-bottom: 50px;
+
 }
