@@ -1,8 +1,16 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+ 
+  overflow-x: auto; 
+  overflow-y:auto; 
+}
 
 body {
-display: flex;
-  margin: 0;
-  
+  display: flex;
+  width: 300vw; /* Tres pantallas de ancho para el tríptico */
 }
 
 .fotoperfil {
@@ -13,18 +21,21 @@ display: flex;
 
 }
 
-.perfil {
-  text-align: center;
-  background-color: #234e78;
-  min-height: 100vh;
-  width: 100%;
-  max-width: 400px;
-  flex-shrink: 0; 
+.perfil, .detalles {
+  /* Usamos dvh para que el fondo siempre cubra el alto visible real */
+  min-height: 100dvh; 
+  width: 100vw;
+  flex-shrink: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
- 
+  box-sizing: border-box;
+  padding-bottom: 20px; /* Espacio extra para que el texto no pegue abajo */
+}
 
+.perfil {
+  background-color: #234e78;
+  max-width: none; /* Quitamos el límite de 400px para que ocupe todo el ancho */
 }
 
 .nombre {
@@ -138,21 +149,9 @@ gap: 5px ;
 
 
 .detalles {
-  text-align: center;
-  font-size: 1.2em;
-  min-height: 100vh;
-
-  width: 100%;
-  max-width: 390px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 0;
   background-color: rgb(189, 197, 197);
-  flex-shrink: 0; 
-    
+  max-width: none;
 }
-
 
 .subtitle{
   font-size: 1.25em;
