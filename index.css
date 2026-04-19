@@ -1,8 +1,8 @@
 
 body {
-  display: flex;
-  flex-wrap: nowrap;
+display: flex;
   margin: 0;
+  max-height: 50%;
 }
 
 .fotoperfil {
@@ -16,7 +16,7 @@ body {
   text-align: center;
   background-color: #234e78;
   height: 100vh;
-  max-height: 700px;
+  max-height: 750px;
   width: 100%;
   max-width: 400px;
   flex-shrink: 0; 
@@ -34,8 +34,11 @@ body {
   margin-bottom: -20px;
   font-size: 1.6em;
   width: 85%;
+  align-items: center;
+flex-wrap: wrap;
+gap: 5px ;
 }
-
+.ing{font-size:0.7em;}
 .esp_container {
   margin-top: 20px;
   display: flex;
@@ -63,7 +66,7 @@ body {
 .descripcion {
   display: flex;
   margin-top: 20px;
-  margin-bottom: -5px;
+  margin-bottom: 10px;
   width: 85%;
   text-align: justify;
   font-size: 0.9em;
@@ -82,6 +85,7 @@ body {
   gap: 10px;
   margin-bottom: 10px;
   font-size: 0.9em;
+
 }
 .contacto {
   display: flex;
@@ -136,7 +140,7 @@ body {
   text-align: center;
   font-size: 1.2em;
   height: 100vh;
-  max-height: 700px;
+  max-height: 750px;
   width: 100%;
   max-width: 390px;
   display: flex;
@@ -152,8 +156,8 @@ body {
   font-size: 1.25em;
   color: #234e78;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   font-weight:bold;
 }
 .formacion{
@@ -161,15 +165,42 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin-top: 0px;
   margin-bottom: 0px;
-  font-weight: bold;
-  width: 82%;
-
+  font-weight: bolder;
+  width: 84.8%;
+  color: black
 }
 
 .instituto{
   font-size: 0.95em;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin-top: 10px;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
 
 }
+.habilidades_container{
+  display: flex;
+  width: 85%;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  justify-content: center;
+  margin-bottom: 10px;
+  font-size: 0.9em;
+}
+
+.habilidades_izq{
+  display: flex;
+  max-width: 50%;
+  margin-right: 30px;
+  justify-content:end ;
+  flex-direction: column;
+}
+
+.habilidades_der{
+  display: flex;
+  margin-left: 30px;
+  max-width: 50%;
+  justify-content: center;
+  flex-direction: column;
+}
+.habilidad{margin-bottom: 20px;}
+
+.espacio{margin-top: 20px;}
