@@ -10,7 +10,7 @@ html, body {
 
 body {
   display: flex;
-  width: 300vw; /* Tres pantallas de ancho para el tríptico */
+  width: auto; /* Tres pantallas de ancho para el tríptico */
 }
 
 .fotoperfil {
@@ -31,11 +31,14 @@ body {
   align-items: center;
   box-sizing: border-box;
   padding-bottom: 20px; /* Espacio extra para que el texto no pegue abajo */
+  max-width: 400px;
+
 }
 
 .perfil {
   background-color: #234e78;
-  max-width: none; /* Quitamos el límite de 400px para que ocupe todo el ancho */
+  max-width: 400px;
+  overflow: hidden;
 }
 
 .nombre {
@@ -150,8 +153,10 @@ gap: 5px ;
 
 .detalles {
   background-color: rgb(189, 197, 197);
-  max-width: none;
-}
+  
+border-right-color: tomato;
+  border-right-width: 10px;
+  }
 
 .subtitle{
   font-size: 1.25em;
@@ -160,27 +165,33 @@ gap: 5px ;
   margin-top: 10px;
   margin-bottom: 10px;
   font-weight:bold;
+  
 }
 .formacion{
+  display: flex;
   font-size: 1em;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin-top: 0px;
   margin-bottom: 0px;
   font-weight: bolder;
-  width: 84.8%;
-  color: black
+  color: black;
+  text-align: center;
 }
 
-.instituto{
+.instituto, .diplomado {
   font-size: 0.95em;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin-top: 10px;
   margin-bottom: 15px;
 
 }
+.diplomado{width: 80%;
+text-align: justify;
+margin-bottom: 1px;}
+
 .habilidades_container{
   display: flex;
-  width: 85%;
+  width: 90%;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   justify-content: center;
   margin-bottom: 10px;
@@ -205,3 +216,5 @@ gap: 5px ;
 .habilidad{margin-bottom: 20px;}
 
 .espacio{margin-top: 20px;}
+
+.formacion_container{width: 82%;}
