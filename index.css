@@ -2,11 +2,9 @@ html,
 body {
   margin: 0;
   padding: 0;
-  height: 100%;
+  height: auto;
   width: 100%;
-
-  overflow-x: auto;
-  overflow-y: auto;
+  background-color: #234e78;
 }
 
 body {
@@ -25,6 +23,7 @@ body {
 .detalles {
   /* Usamos dvh para que el fondo siempre cubra el alto visible real */
   min-height: 100dvh;
+
   width: 100vw;
   flex-shrink: 0;
   display: flex;
@@ -36,7 +35,7 @@ body {
 }
 
 .perfil {
-  background-color: #234e78;
+
   max-width: 400px;
   overflow: hidden;
 }
@@ -249,4 +248,6 @@ body {
   height: 100%;
   background-color: #234e78;
   flex-shrink: 0;
+
+
 }
