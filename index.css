@@ -1,11 +1,12 @@
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   height: 100%;
   width: 100%;
- 
-  overflow-x: auto; 
-  overflow-y:auto; 
+
+  overflow-x: auto;
+  overflow-y: auto;
 }
 
 body {
@@ -18,12 +19,12 @@ body {
   height: 130px;
   margin-top: 10px;
   border-radius: 50%;
-
 }
 
-.perfil, .detalles {
+.perfil,
+.detalles {
   /* Usamos dvh para que el fondo siempre cubra el alto visible real */
-  min-height: 100dvh; 
+  min-height: 100dvh;
   width: 100vw;
   flex-shrink: 0;
   display: flex;
@@ -32,7 +33,6 @@ body {
   box-sizing: border-box;
   padding-bottom: 20px; /* Espacio extra para que el texto no pegue abajo */
   max-width: 400px;
-
 }
 
 .perfil {
@@ -50,10 +50,12 @@ body {
   font-size: 1.6em;
   width: 85%;
   align-items: center;
-flex-wrap: wrap;
-gap: 5px ;
+  flex-wrap: wrap;
+  gap: 5px;
 }
-.ing{font-size:0.7em;}
+.ing {
+  font-size: 0.7em;
+}
 .esp_container {
   margin-top: 20px;
   display: flex;
@@ -100,7 +102,6 @@ gap: 5px ;
   gap: 10px;
   margin-bottom: 10px;
   font-size: 0.9em;
-
 }
 .contacto {
   display: flex;
@@ -150,24 +151,23 @@ gap: 5px ;
   text-decoration: underline;
 }
 
-
 .detalles {
   background-color: rgb(189, 197, 197);
-  
-border-right-color: tomato;
-  border-right-width: 10px;
-  }
 
-.subtitle{
+  border-right-color: tomato;
+  border-right-width: 10px;
+}
+
+.subtitle,
+.habilidades {
   font-size: 1.25em;
   color: #234e78;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin-top: 10px;
   margin-bottom: 10px;
-  font-weight:bold;
-  
+  font-weight: bold;
 }
-.formacion{
+.formacion {
   display: flex;
   font-size: 1em;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -178,18 +178,28 @@ border-right-color: tomato;
   text-align: center;
 }
 
-.instituto, .diplomado {
+.instituto,
+.diplomado,
+.greener {
   font-size: 0.95em;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin-top: 10px;
   margin-bottom: 15px;
 
 }
-.diplomado{width: 80%;
-text-align: justify;
-margin-bottom: 1px;}
+.greener{color: rgb(32, 32, 142);
+font-size: medium;}
+.diplomado {
+  width: 80%;
+  text-align: justify;
+  margin-bottom: 1px;
+}
+.habilidades{
+margin-top: 50px;
+margin-bottom: 20px;
+}
 
-.habilidades_container{
+.habilidades_container {
   display: flex;
   width: 90%;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -198,23 +208,36 @@ margin-bottom: 1px;}
   font-size: 0.9em;
 }
 
-.habilidades_izq{
+.habilidades_izq {
   display: flex;
   max-width: 50%;
   margin-right: 30px;
-  justify-content:end ;
+  justify-content: end;
   flex-direction: column;
 }
 
-.habilidades_der{
+.habilidades_der {
   display: flex;
   margin-left: 30px;
   max-width: 50%;
   justify-content: center;
   flex-direction: column;
 }
-.habilidad{margin-bottom: 20px;}
+.habilidad {
+  margin-bottom: 20px;
+}
 
-.espacio{margin-top: 20px;}
+.espacio {
+  margin-top: 20px;
+}
 
-.formacion_container{width: 82%;}
+.formacion_container {
+  width: 82%;
+}
+
+.borde {
+  width: 4px;
+  height: 100%;
+  background-color: #234e78;
+  flex-shrink: 0;
+}
