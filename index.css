@@ -22,7 +22,7 @@ body {
 .detalles {
   /* Usamos dvh para que el fondo siempre cubra el alto visible real */
   min-height: 100dvh;
-  max-height: 100vh;
+  max-height: 100%;
   width: 100vw;
   flex-shrink: 0;
   display: flex;
@@ -164,7 +164,11 @@ body {
   margin-top: 10px;
   margin-bottom: 10px;
   font-weight: bold;
+justify-content: center;
+align-items: center;
 }
+
+
 .formacion,
 .docente {
   display: flex;
@@ -196,7 +200,8 @@ body {
 .greener {
   color: rgb(32, 32, 142);
   font-size: medium;
-margin-top: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 .diplomado {
   width: 80%;
@@ -240,7 +245,8 @@ margin-top: 5px;
 
 
 .formacion_container {
-  width: 82%;
+  width: 80%;
+  justify-content: center;
 }
 
 .borde {
@@ -250,4 +256,10 @@ margin-top: 5px;
   background-color: #234e78;
   flex-shrink: 0;
   display: flex;
+}
+
+
+.space{
+  margin-top: 5px;
+
 }
