@@ -22,7 +22,7 @@ body {
 .detalles {
   /* Usamos dvh para que el fondo siempre cubra el alto visible real */
   min-height: 100dvh;
-
+  max-height: 100vh;
   width: 100vw;
   flex-shrink: 0;
   display: flex;
@@ -196,6 +196,7 @@ body {
 .greener {
   color: rgb(32, 32, 142);
   font-size: medium;
+margin-top: 5px;
 }
 .diplomado {
   width: 80%;
@@ -237,9 +238,6 @@ body {
   color: rgb(7, 95, 128);
 }
 
-.espacio {
-  margin-top: 20px;
-}
 
 .formacion_container {
   width: 82%;
