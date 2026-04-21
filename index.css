@@ -1,15 +1,16 @@
-html,
-body {
+html, body {
   margin: 0;
   padding: 0;
-  height: auto;
   width: 100%;
+  overflow-x: hidden; /* Evita el desplazamiento horizontal */
 }
 
 body {
   display: flex;
-  width: auto;
+  flex-direction: column; /* Apila las secciones una debajo de otra */
+  align-items: center;
 }
+
 
 .fotoperfil {
   width: 150px;
@@ -20,20 +21,21 @@ body {
 
 .perfil,
 .detalles {
-  min-height: 100dvh;
-  width: 100vw;
+  min-height:auto;
+  width: 100%;
+  max-width: 100%;
   flex-shrink: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   box-sizing: border-box;
   max-width: 400px;
+  box-sizing: border-box;
 }
 
 .perfil {
   background-color: #234e78;
   max-width: 400px;
-
 }
 
 .nombre {
@@ -97,6 +99,7 @@ body {
   margin-left: 20px;
   gap: 10px;
   font-size: 0.9em;
+  margin-bottom: 15px;
 }
 .contacto {
   display: flex;
@@ -148,6 +151,7 @@ body {
 
 .detalles {
   background-color: rgb(189, 197, 197);
+  text-align: center;
 }
 
 .subtitle,
@@ -160,7 +164,6 @@ body {
   font-weight: bold;
 }
 
-
 .formacion,
 .docente {
   display: flex;
@@ -171,17 +174,13 @@ body {
   font-weight: bolder;
   color: rgb(7, 95, 128);
   justify-content: center;
-
-
 }
 .docente {
   gap: 15px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  
 }
-
 
 .instituto,
 .diplomado,
@@ -241,22 +240,46 @@ body {
   font-weight: normal;
 }
 
-
 .formacion_container {
   max-width: 90%;
-  justify-content: center;
   color: #234e78;
-  font-weight: 500;
+  padding: 0; /* Quita el espacio extra de la izquierda */
+  margin: 0 auto;
+  max-width: 90%;
   text-align: center;
-
 }
+
 
 .borde {
-  width: 4px;
-
-  height: auto;
-  background-color: #234e78;
+  width: 100%;           /* En celular, el borde es una línea horizontal */
+  height: 4px;
+  background-color: rgb(189, 197, 197);
   flex-shrink: 0;
-  display: flex;
 }
 
+@media (min-width: 768px) {
+  body {
+    flex-direction: row;      /* Pone perfil a la izquierda y detalles a la derecha */
+    align-items: flex-start;  /* Alinea al inicio superior */
+    justify-content: center;
+  }
+
+  .perfil {
+    width: 350px;             /* Ancho fijo para la columna de perfil */
+    position: sticky;         /* Opcional: el perfil se queda fijo al bajar */
+    top: 0;
+    height: 100vh;
+  }
+
+  .detalles {
+    flex: 1;                  /* Toma todo el espacio restante a la derecha */
+    max-width: 800px;         /* Límite para que el texto no sea demasiado largo */
+    min-height: 100vh;
+  }
+
+  .borde {
+    width: 4px;               /* En laptop, vuelve a ser una línea vertical */
+    height: 100vh;
+
+  }
+}
