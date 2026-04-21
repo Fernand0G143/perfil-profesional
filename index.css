@@ -53,12 +53,12 @@ body {
   justify-content: space-evenly;
   color: var(--white);
   margin-bottom: -20px;
-  font-size: 1.4em;
+  font-size: 1.5em;
   width: 85%;
   align-items: center;
   flex-wrap: wrap;
   gap: 5px;
-  margin-top: 2px;
+  margin-top: 15px;
 }
 
 .ing {
@@ -89,7 +89,7 @@ body {
   margin-bottom: 10px;
   width: 85%;
   text-align: justify;
-  font-size: 0.8em;
+  font-size: 0.9em;
   color: var(--white);
 }
 
