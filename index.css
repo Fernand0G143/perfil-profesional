@@ -1,8 +1,20 @@
+/* CSS Variables for colors and fonts */
+:root {
+  --primary-blue: #234e78;
+  --white: white;
+  --gray-bg: rgb(189, 197, 197);
+  --accent-blue: rgb(7, 95, 128);
+  --purple: rgb(77, 3, 70);
+  --link-blue: rgb(32, 32, 142);
+  --font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
 html,
 body {
   margin: 0;
   padding: 0;
   width: 100%;
+  font-family: var(--font-family);
 }
 
 body {
@@ -22,27 +34,24 @@ body {
 .detalles {
   min-height: auto;
   width: 100%;
-  max-width: 100%;
+  max-width: 400px;
   flex-shrink: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
-  box-sizing: border-box;
-  max-width: 400px;
   box-sizing: border-box;
   overflow-x: hidden;
   min-width: 350px;
 }
 
 .perfil {
-  background-color: #234e78;
+  background-color: var(--primary-blue);
 }
 
 .nombre {
   display: flex;
   justify-content: space-evenly;
-  color: white;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: var(--white);
   margin-bottom: -20px;
   font-size: 1.4em;
   width: 85%;
@@ -51,114 +60,110 @@ body {
   gap: 5px;
   margin-top: 2px;
 }
+
 .ing {
   font-size: 0.7em;
 }
+
 .esp_container {
   margin-top: 20px;
   display: flex;
   flex-direction: column;
-  align-items: right;
-  justify-content: right;
+  align-items: flex-end;
+  justify-content: flex-end;
   width: 100%;
-
   margin-left: 60px;
-  color: white;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: var(--white);
   font-size: 0.7em;
 }
 
 .especialidad {
-  display: flex;
   margin-bottom: -10px;
 }
 
 .rni {
-  display: flex;
-  margin-bottom: 0px;
+  margin-bottom: 0;
 }
 
 .descripcion {
-  display: flex;
   margin-top: 20px;
   margin-bottom: 10px;
   width: 85%;
   text-align: justify;
   font-size: 0.8em;
-  color: white;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: var(--white);
 }
 
 .contacto_container {
   display: flex;
   flex-direction: column;
   width: 100%;
-  color: white;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: var(--white);
   text-align: left;
   margin-left: 20px;
   gap: 10px;
   font-size: 0.9em;
   margin-bottom: 15px;
 }
+
 .contacto {
-  display: flex;
   margin-bottom: 10px;
   margin-top: 20px;
   margin-left: 25px;
 }
+
 .contacto_item {
   display: flex;
-  margin-bottom: 0px;
   gap: 20px;
   align-items: center;
   margin-left: 40px;
 }
 
 .telf {
-  margin-bottom: 0px;
   height: 25px;
   margin-left: 5px;
   margin-top: 3px;
 }
+
 .circle {
   width: 33px;
   height: 33px;
-  background-color: white;
+  background-color: var(--white);
   border-radius: 50%;
-  margin-left: 0;
-  margin-bottom: 0;
 }
 
 .mail {
-  margin-bottom: 0px;
   height: 16.3px;
   margin-left: 4px;
   margin-top: 9px;
 }
 
 .casa {
-  margin-bottom: 0px;
   height: 25px;
   margin-left: 3px;
   margin-top: 2px;
 }
 
 .numero {
-  color: white;
+  color: var(--white);
   text-decoration: underline;
+  transition: outline 0.2s;
+}
+
+.numero:focus {
+  outline: 2px solid var(--white);
+  outline-offset: 2px;
 }
 
 .detalles {
-  background-color: rgb(189, 197, 197);
+  background-color: var(--gray-bg);
   text-align: center;
 }
 
 .subtitle,
 .habilidades {
   font-size: 1.1em;
-  color: #234e78;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: var(--primary-blue);
   margin-top: 10px;
   margin-bottom: 10px;
   font-weight: bold;
@@ -166,18 +171,16 @@ body {
 
 .formacion,
 .docente {
-  display: flex;
-  font-size: 0.9em;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  margin-top: 0px;
-  margin-bottom: 0px;
+  font-size: 0.8em;
+  margin-top: 0;
+  margin-bottom: 0;
   font-weight: bolder;
-  color: rgb(7, 95, 128);
+  color: var(--accent-blue);
   justify-content: center;
 }
+
 .docente {
   gap: 15px;
-  display: flex;
   flex-direction: column;
   align-items: center;
 }
@@ -186,32 +189,30 @@ body {
 .diplomado,
 .greener {
   font-size: 0.85em;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin-top: 5px;
   margin-bottom: 10px;
-  color: rgb(77, 3, 70);
+  color: var(--purple);
 }
 
 .greener {
-  color: rgb(32, 32, 142);
+  color: var(--link-blue);
   font-size: medium;
-  margin-top: 5px;
   margin-bottom: 5px;
 }
+
 .diplomado {
   width: 90%;
-  text-align: justify;
+  text-align: center;
   margin-bottom: 1px;
 }
+
 .habilidades {
   margin-top: 40px;
-  margin-bottom: 10px;
 }
 
 .habilidades_container {
   display: flex;
   width: 90%;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   justify-content: center;
   margin-bottom: 10px;
   font-size: 0.9em;
@@ -219,33 +220,31 @@ body {
 }
 
 .habilidades_izq {
-  display: flex;
   max-width: 50%;
   margin-right: 30px;
-  justify-content: end;
+  justify-content: flex-end;
   flex-direction: column;
 }
 
 .habilidades_der {
-  display: flex;
   margin-left: 30px;
   max-width: 50%;
   justify-content: center;
   flex-direction: column;
 }
+
 .habilidad {
   margin-bottom: 20px;
   font-size: medium;
-  color: rgb(7, 95, 128);
+  color: var(--accent-blue);
   font-weight: normal;
 }
 
 .formacion_container {
   max-width: 90%;
-  color: #234e78;
+  color: var(--primary-blue);
   padding: 0;
   margin: 0 auto;
-  max-width: 90%;
   text-align: center;
 }
 
@@ -253,7 +252,7 @@ body {
   width: 100%;
   max-width: 400px;
   height: 4px;
-  background-color: rgb(189, 197, 197);
+  background-color: var(--gray-bg);
   flex-shrink: 0;
 }
 
@@ -286,8 +285,9 @@ body {
   .borde {
     width: 4px;
     height: 100vh;
-    background-color: #234e78;
+    background-color: var(--primary-blue);
   }
+
   .inteligencia {
     margin-top: 15px;
   }
