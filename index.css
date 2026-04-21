@@ -259,7 +259,7 @@ body {
   flex-shrink: 0;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 700px) {
   body {
     flex-direction: row;
     align-items: stretch;
