@@ -1,9 +1,9 @@
 /* CSS Variables for colors and fonts */
 :root {
-  --primary-blue: #234e78;
+  --blue: #234e78;
   --white: white;
   --gray-bg: rgb(189, 197, 197);
-  --accent-blue: rgb(7, 95, 128);
+
   --purple: rgb(77, 3, 70);
   --link-blue: rgb(32, 32, 142);
   --font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -45,7 +45,7 @@ body {
 }
 
 .perfil {
-  background-color: var(--primary-blue);
+  background-color: var(--blue);
 }
 
 .nombre {
@@ -59,6 +59,7 @@ body {
   flex-wrap: wrap;
   gap: 5px;
   margin-top: 2px;
+
 }
 
 .ing {
@@ -69,12 +70,11 @@ body {
   margin-top: 20px;
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
-  justify-content: flex-end;
+  align-items: start;
   width: 100%;
-  margin-left: 60px;
   color: var(--white);
   font-size: 0.7em;
+  margin-left: 60px;
 }
 
 .especialidad {
@@ -163,7 +163,7 @@ body {
 .subtitle,
 .habilidades {
   font-size: 1.1em;
-  color: var(--primary-blue);
+  color: var(--blue);
   margin-top: 10px;
   margin-bottom: 10px;
   font-weight: bold;
@@ -173,9 +173,9 @@ body {
 .docente {
   font-size: 0.8em;
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 10px;
   font-weight: bolder;
-  color: var(--accent-blue);
+  color: var(--blue);
   justify-content: center;
 }
 
@@ -242,7 +242,7 @@ body {
 
 .formacion_container {
   max-width: 90%;
-  color: var(--primary-blue);
+  color: var(--blue);
   padding: 0;
   margin: 0 auto;
   text-align: center;
@@ -285,7 +285,7 @@ body {
   .borde {
     width: 4px;
     height: 100vh;
-    background-color: var(--primary-blue);
+    background-color: var(--blue);
   }
 
   .inteligencia {
