@@ -262,6 +262,7 @@ body {
     flex-direction: row;
     align-items: stretch;
     height: 100vh;
+    overflow: auto;
   }
 
   .perfil {
@@ -278,7 +279,7 @@ body {
     max-width: 100%;
     overflow:scroll;
     padding: 20px;
-    max-height: 100vh;
+    height: 100vh;
     padding-top: 7px;
     flex-shrink: 0;
   }
