@@ -217,7 +217,7 @@ body {
   display: flex;
   width: 90%;
   justify-content: left;
-  margin-left: -10px;
+  margin-left: 85px;
   margin-bottom: 10px;
   font-size: 0.9em;
   margin-top: -10px;
@@ -295,14 +295,6 @@ body {
   .inteligencia {
     margin-top: 15px;
   }
+.habilidades_container{margin-left: 0;}
 
-  .habilidades_container {
-  display: flex;
-  width: 90%;
-  justify-content: left;
-  margin-left: -10px;
-  margin-bottom: 10px;
-  font-size: 0.9em;
-  margin-top: -10px;
-}
 }
