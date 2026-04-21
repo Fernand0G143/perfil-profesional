@@ -279,7 +279,6 @@ body {
     max-width: 100%;
     overflow:scroll;
     padding: 20px;
-    height: 100vh;
     padding-top: 7px;
     flex-shrink: 0;
   }
