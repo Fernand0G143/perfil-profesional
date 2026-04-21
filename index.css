@@ -185,7 +185,9 @@ body {
   flex-direction: column;
   align-items: center;
 }
-.formacion{font-size: 0.9em;}
+.formacion {
+  font-size: 0.9em;
+}
 
 .instituto,
 .diplomado,
@@ -216,8 +218,7 @@ body {
 .habilidades_container {
   display: flex;
   width: 90%;
-  justify-content: left;
-  margin-left: 85px;
+  justify-content: center;
   margin-bottom: 10px;
   font-size: 0.9em;
   margin-top: -10px;
@@ -295,6 +296,7 @@ body {
   .inteligencia {
     margin-top: 15px;
   }
-.habilidades_container{margin-left: 0;}
-
+  .habilidades_container {
+    justify-content: left;
+  }
 }
