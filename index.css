@@ -217,11 +217,11 @@ body {
 .habilidades_container {
   display: flex;
   width: 90%;
-  justify-content: left;
+  justify-content: center;
   margin-bottom: 10px;
   font-size: 0.9em;
   margin-top: -10px;
-  margin-left: 40px;
+  margin-left: -25px;
 }
 
 .habilidades_izq {
