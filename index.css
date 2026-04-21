@@ -2,12 +2,12 @@ html, body {
   margin: 0;
   padding: 0;
   width: 100%;
-  overflow-x: hidden; /* Evita el desplazamiento horizontal */
+  overflow-x: hidden; 
 }
 
 body {
   display: flex;
-  flex-direction: column; /* Apila las secciones una debajo de otra */
+  flex-direction: column; 
   align-items: center;
 }
 
@@ -243,7 +243,7 @@ body {
 .formacion_container {
   max-width: 90%;
   color: #234e78;
-  padding: 0; /* Quita el espacio extra de la izquierda */
+  padding: 0; 
   margin: 0 auto;
   max-width: 90%;
   text-align: center;
@@ -251,7 +251,8 @@ body {
 
 
 .borde {
-  width: 100%;           /* En celular, el borde es una línea horizontal */
+  width: 100%;
+  max-width: 400px;          
   height: 4px;
   background-color: rgb(189, 197, 197);
   flex-shrink: 0;
@@ -259,26 +260,26 @@ body {
 
 @media (min-width: 768px) {
   body {
-    flex-direction: row;      /* Pone perfil a la izquierda y detalles a la derecha */
-    align-items: flex-start;  /* Alinea al inicio superior */
+    flex-direction: row;      
+    align-items: flex-start;  
     justify-content: center;
   }
 
   .perfil {
-    width: 350px;             /* Ancho fijo para la columna de perfil */
-    position: sticky;         /* Opcional: el perfil se queda fijo al bajar */
+    width: 350px;             
+    position: sticky;         
     top: 0;
     height: 100vh;
   }
 
   .detalles {
-    flex: 1;                  /* Toma todo el espacio restante a la derecha */
-    max-width: 800px;         /* Límite para que el texto no sea demasiado largo */
+    flex: 1;                 
+    max-width: 800px;        
     min-height: 100vh;
   }
 
   .borde {
-    width: 4px;               /* En laptop, vuelve a ser una línea vertical */
+    width: 4px;              
     height: 100vh;
 
   }
