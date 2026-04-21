@@ -204,7 +204,7 @@ body {
   width: 90%;
   text-align: center;
   margin-bottom: 1px;
-  
+  font-size: 0.8em;
 }
 
 .habilidades {
@@ -215,10 +215,11 @@ body {
 .habilidades_container {
   display: flex;
   width: 90%;
-  justify-content: center;
+  justify-content: left;
   margin-bottom: 10px;
   font-size: 0.9em;
   margin-top: -10px;
+
 }
 
 .habilidades_izq {
