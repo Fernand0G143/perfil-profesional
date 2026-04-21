@@ -53,12 +53,12 @@ body {
   justify-content: space-evenly;
   color: var(--white);
   margin-bottom: -20px;
-  font-size: 1.5em;
+  font-size: 1.4em;
   width: 85%;
   align-items: center;
   flex-wrap: wrap;
   gap: 5px;
-  margin-top: 15px;
+  margin-top: 10px;
 }
 
 .ing {
@@ -85,11 +85,11 @@ body {
 }
 
 .descripcion {
-  margin-top: 20px;
+  margin-top: 15px;
   margin-bottom: 10px;
   width: 85%;
   text-align: justify;
-  font-size: 0.9em;
+  font-size: 0.85em;
   color: var(--white);
 }
 
@@ -107,7 +107,7 @@ body {
 
 .contacto {
   margin-bottom: 10px;
-  margin-top: 20px;
+  margin-top: 10px;
   margin-left: 25px;
 }
 
