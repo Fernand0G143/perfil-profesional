@@ -262,7 +262,6 @@ body {
     flex-direction: row;
     align-items: stretch;
     height: 100vh;
-    overflow: auto;
   }
 
   .perfil {
@@ -274,13 +273,14 @@ body {
   }
 
   .detalles {
-    flex: 0;
-    width: 350px;
+    flex: 0 0 350px;
     max-width: 100%;
-    overflow:scroll;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    overflow-y: auto;
     padding: 20px;
     padding-top: 7px;
-    flex-shrink: 0;
   }
 
   .borde {
