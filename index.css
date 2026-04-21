@@ -3,7 +3,6 @@
   --blue: #234e78;
   --white: white;
   --gray-bg: rgb(189, 197, 197);
-
   --purple: rgb(77, 3, 70);
   --link-blue: rgb(32, 32, 142);
   --font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -218,10 +217,11 @@ body {
 .habilidades_container {
   display: flex;
   width: 90%;
-  justify-content: center;
+  justify-content: left;
   margin-bottom: 10px;
   font-size: 0.9em;
   margin-top: -10px;
+  margin-left: 40px;
 }
 
 .habilidades_izq {
@@ -298,5 +298,6 @@ body {
   }
   .habilidades_container {
     justify-content: left;
+    margin-right: 50px;
   }
 }
