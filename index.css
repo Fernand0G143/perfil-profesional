@@ -9,7 +9,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-
 }
 
 .fotoperfil {
@@ -32,12 +31,11 @@ body {
   max-width: 400px;
   box-sizing: border-box;
   overflow-x: hidden;
-
+  min-width: 350px;
 }
 
 .perfil {
   background-color: #234e78;
- 
 }
 
 .nombre {
@@ -263,39 +261,36 @@ body {
   body {
     flex-direction: row;
     align-items: stretch;
-    max-height: 100vh;
-    overflow-y: hidden;
-  
+    height: 100vh;
+    overflow: hidden;
   }
 
   .perfil {
     position: sticky;
     top: 0;
     height: 100vh;
-    width: 350px; /* Reducimos un poco el ancho del perfil para dar más espacio */
-    flex-shrink: 0; /* Evita que el perfil se haga pequeño */
+    width: 350px;
+    flex-shrink: 0;
   }
 
   .detalles {
-    flex: 0; /* Permite que crezca */
-    width: 350px; /* <--- Esto evita que se hagan tan delgados */
+    flex: 0;
+    width: 350px;
     max-width: 100%;
     overflow-y: auto;
     padding: 20px;
     max-height: 100vh;
     overflow-y: hidden;
-    padding-top: 7px; /* Ajusta este valor para bajar los elementos a tu gusto */
-   
-    
+    padding-top: 7px;
+    flex-shrink: 0;
   }
 
   .borde {
     width: 4px;
     height: 100vh;
-      background-color: #234e78;
+    background-color: #234e78;
   }
   .inteligencia {
     margin-top: 15px;
   }
-
 }
