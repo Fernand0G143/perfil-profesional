@@ -16,8 +16,8 @@ Soy Ingeniero Civil con especialización en diseño estructural y actualmente cu
 
 ## 🔗 Enlaces de interés
 * [Ver Portafolio en Vivo](https://fernand0g143.github.io/perfil-profesional/)
-* [Certificados y Documentación]([https://drive.google.com/drive/folders/tu_id_de_driv](https://drive.google.com/drive/folders/1B3Zq_qDmpx4EhdkrgDmtT_rfA0rjXkoW?usp=drive_link))
-
+* [Certificados y Documentación](https://drive.google.com/drive/folders/1B3Zq_qDmpx4EhdkrgDmtT_rfA0rjXkoW?usp=drive_link)
+* 
 ## 📩 Contacto
 * **WhatsApp:** [+591 79548420](https://wa.me/59179548420)
 * **Email:** guzmanriveros2018@gmail.com
