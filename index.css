@@ -168,10 +168,10 @@ body {
   margin-bottom: 10px;
   font-weight: bold;
 }
-
+.subtitle{margin-top: 20px;}
 .formacion,
 .docente {
-  font-size: 0.8em;
+  font-size: 0.85em;
   margin-top: 0;
   margin-bottom: 10px;
   font-weight: bolder;
@@ -190,13 +190,13 @@ body {
 .greener {
   font-size: 0.85em;
   margin-top: 5px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   color: var(--purple);
 }
 
 .greener {
   color: var(--link-blue);
-  font-size: medium;
+  font-size: 0.85em;
   margin-bottom: 5px;
 }
 
@@ -204,10 +204,12 @@ body {
   width: 90%;
   text-align: center;
   margin-bottom: 1px;
+  
 }
 
 .habilidades {
   margin-top: 40px;
+  
 }
 
 .habilidades_container {
@@ -236,7 +238,7 @@ body {
 .habilidad {
   margin-bottom: 20px;
   font-size: medium;
-  color: var(--accent-blue);
+  color: var(--blue);
   font-weight: normal;
 }
 
@@ -255,6 +257,9 @@ body {
   background-color: var(--gray-bg);
   flex-shrink: 0;
 }
+
+
+
 
 @media (min-width: 760px) {
   body {
