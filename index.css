@@ -259,7 +259,7 @@ body {
   flex-shrink: 0;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 760px) {
   body {
     flex-direction: row;
     align-items: stretch;
@@ -278,7 +278,7 @@ body {
 
   .detalles {
     flex: 0; /* Permite que crezca */
-    min-width: 350px; /* <--- Esto evita que se hagan tan delgados */
+    width: 350px; /* <--- Esto evita que se hagan tan delgados */
     max-width: 100%;
     overflow-y: auto;
     padding: 20px;
