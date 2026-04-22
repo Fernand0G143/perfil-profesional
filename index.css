@@ -42,6 +42,7 @@ body {
   box-sizing: border-box;
   overflow-x: hidden;
   min-width: 350px;
+     background-color: var(--blue);
 }
 
 
@@ -152,8 +153,9 @@ body {
 }
 
 .detalles {
-
+background-color: var(--gray-bg);
   text-align: center;
+  max-width: 100dvh;
 }
 
 .subtitle,
@@ -280,13 +282,13 @@ margin-left: 5%;
 
   .detalles {
     flex: 0 0 350px;
-    max-width: 100%;
     height: 100vh;
     position: sticky;
     top: 0;
     overflow-y: auto;
     padding: 20px;
     padding-top: 7px;
+   
   }
 
   .borde {
