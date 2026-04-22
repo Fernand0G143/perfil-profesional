@@ -60,7 +60,7 @@ body {
 .ing {
   font-size: 0.7em;
 }
-
+.perfil{overflow-x: hidden;}
 .esp_container {
   margin-top: 20px;
   display: flex;
