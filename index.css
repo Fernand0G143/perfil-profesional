@@ -33,6 +33,7 @@ body {
 .perfil,
 .detalles {
   min-height: auto;
+  width: 100%;
   max-width: 400px;
   flex-shrink: 0;
   display: flex;
@@ -41,8 +42,9 @@ body {
   box-sizing: border-box;
   overflow-x: hidden;
   min-width: 350px;
-  background-color: var(--blue);
+     background-color: var(--blue);
 }
+
 
 .nombre {
   display: flex;
@@ -151,9 +153,9 @@ body {
 }
 
 .detalles {
-  background-color: var(--gray-bg);
+background-color: var(--gray-bg);
   text-align: center;
-  max-width: 95vh;
+  max-width: 100dvh;
 }
 
 .subtitle,
@@ -246,10 +248,12 @@ body {
 .formacion_container {
   color: var(--blue);
   padding: 0;
+
+  
 }
-.li {
-  width: 90%;
-  margin-left: 5%;
+.li{
+width: 90%;
+margin-left: 5%;
 }
 
 .borde {
@@ -284,6 +288,7 @@ body {
     overflow-y: auto;
     padding: 20px;
     padding-top: 7px;
+   
   }
 
   .borde {
@@ -298,5 +303,6 @@ body {
   .habilidades_container {
     justify-content: left;
     margin-left: 0px;
+    
   }
 }
