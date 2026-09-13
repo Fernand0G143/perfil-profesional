@@ -260,10 +260,6 @@ body {
   background-color: var(--gray-bg);
   flex-shrink: 0;
 }
-  .trabajos{
-    font-size: 1.2em;
-    font-weight: bold;
-    height: 40px;
 
   }
 @media (min-width: 760px) {
