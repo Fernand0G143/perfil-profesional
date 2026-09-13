@@ -236,7 +236,8 @@ body {
   flex-direction: column;
 }
 
-.habilidad {
+.habilidad,
+.trabajo {
   margin-bottom: 20px;
   font-size: 1.15em;
   color: var(--blue);
@@ -299,4 +300,9 @@ body {
     justify-content: left;
     margin-left: 0px;
   }
+  .trabajos{
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+
 }
